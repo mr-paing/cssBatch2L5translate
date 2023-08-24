@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Translate function</title>
+	<style type="text/css">
+		img{
+			width: 300px;
+			display: block; /*inline မှ block element သို့ ပြောင်းလဲရန်သုံး*/
+			margin: auto;
+			margin-top: 200px;
+			/*margin ကို center ထားဖို့ auto ကိုသုံး, margin="auto"သည် block element တွင်သာ အလုပ်လုပ်။*/
+
+			transition: all 3s;
+		}
+
+		img:hover{
+			/*(move to right)*/
+			/*transform:translate (-150px);*/
+
+
+			/*(move to lett) */
+			/*transform:translate  (150px);*/ 
+
+			 /*tanslate = translateX Xကို ပေးချင်လည်းရသည်။ မပေးချင်လည်း ရသည်။*/
+
+			 	/*MOVE TO DOWN */
+			 /*transform: translateY(150px);*/
+
+			 	/*MOVE TO UP*/
+			 /*transform: translateY(-150px);*/
+
+
+			/* %နဲ့ လည်းပေးလို့ရသည်။*/
+
+			/*transform: translate(150%);*/
+			/*transform: translate(-150%);
+*/
+			/*transform: translateX(-150px) translateY(150px);*/
+
+								/*x  ,     y*/
+			transform:translate(150px,-150px);
+		}
+
+	</style>
+</head>
+<body>
+	<img src="img/dog.jpg" alt="dog" />
+</body>
+</html>
